@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<title>Home page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0n.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 		<!--Style Sheet-->
@@ -140,7 +142,32 @@ figure {
     padding: 1rem;
 }
 
-
+@media (min-width: 992px){
+	.dropdown-menu .dropdown-toggle:after{
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	}
+	.dropdown-menu .dropdown-menu{
+		margin-left:0; margin-right: 0;
+	}
+	.dropdown-menu li{
+		position: relative;
+	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}
 
 
 
@@ -160,15 +187,7 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-
-
+ 
 	</style>
 
 </head>
@@ -177,7 +196,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="hackdexam-logo.PNG" ><img src="hackdexam-logo.PNG" class="img-fluid img-responsive p-0"></a>
+		<a class="navbar-brand" href="C:\Users\HP\Documents\hackdexam-logo.jpg" ><img src="C:\Users\HP\Documents\hackdexam-logo.png" class="img-fluid img-responsive p-0"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -198,13 +217,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
 			          Competitive Exams
 			        </a>
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="#" target="_blank">Engineering</a>
-			          <a class="dropdown-item" href="#" target="_blank">MedicalI</a>
+								        	
+
+
+			        	
+					  <a class="dropdown-item" href="#" target="_blank">Engineering</a>
+			          <a class="dropdown-item" href="#" target="_blank">Medical</a>
 			          <a class="dropdown-item" href="#" target="_blank">Defence</a>
 			          <a class="dropdown-item" href="#" target="_blank">Law</a>
-			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#" target="_blank">Publish E-book/notes</a>
-
+			           
+			           
 			        </div>
 			    </li>
 				<li class="nav-item dropdown">
@@ -212,13 +234,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
 			          E-books
 			        </a>
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="#" target="_blank">Class-XII</a>
-			          <a class="dropdown-item" href="#" target="_blank">Class-XI</a>
-			          <a class="dropdown-item" href="#" target="_blank">Class-X</a>
-			          <a class="dropdown-item" href="#" target="_blank">Class-IX</a>
-			          <div class="dropdown-divider"></div>
-			          <a class="dropdown-item" href="#" target="_blank">Publish E-book/notes</a>
-
+			          <a class="dropdown-item" href="#" target="_blank">CBSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">ISC/ICSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">UP/STATE</a>
+			          <a class="dropdown-item" href="#" target="_blank">LIBRARY</a>
+			          
 			        </div>
 			    </li>
 				<li class="nav-item ">
@@ -367,7 +387,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 	<div class="container-fluid p-2">
 		<div class="row text-center p-2">
 			<div class="col-12">
-				<img src="hackdexam-logo.PNG" style="width:15vw;" class="mb-4">
+				<img src="C:\Users\HP\Documents\hackdexam-logo.png" style="width:15vw;" class="mb-4">
 				<br>
 				
 			
@@ -382,6 +402,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 </footer>
 
 <!--Jquery Refrence -->
+	
 		<script type="text/javascript" src="js/jquery-3.5.1.js "></script>
 		<!--Bootstrap Refrence -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
