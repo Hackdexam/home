@@ -5,24 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css"> 
 		<!--Style Sheet-->
 		<link rel="stylesheet" type="text/css" href="E:\web development\Website Development\bootstrap-4.5.0-dist\style_first.css">
 		<!--Font Awesome -->
+
 		<script type="text/javascript" src=" ./js/all.js">	</script>
-	<link href="css/style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<style type="text/css">
-		.a:hover{
+		$('.dropdown-toggle').dropdown()
+		a hover:{
 			color:red;
 		}
-		.a:link{
+		a link:{
 			color:purple;
 		}
-		.a:visited{
+		a visited:{
 			color:grey;
 		}
 	</style>
@@ -47,16 +49,38 @@
 					<a href="audio-book.html" class="nav-link">Audio books</a>
 				</li>
 				<li class="nav-item ">
-					<a href="#" class="nav-link">Coding for kids</a>
+					<a href="#" class="nav-link">Coding</a>
 				</li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Competitive Exams
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#" target="_blank">Engineering</a>
+			          <a class="dropdown-item" href="#" target="_blank">MedicalI</a>
+			          <a class="dropdown-item" href="#" target="_blank">Defence</a>
+			          <a class="dropdown-item" href="#" target="_blank">Law</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#" target="_blank">Publish E-book/notes</a>
+
+			        </div>
+			    </li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          E-books
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#" target="_blank">Class-XII</a>
+			          <a class="dropdown-item" href="#" target="_blank">Class-XI</a>
+			          <a class="dropdown-item" href="#" target="_blank">Class-X</a>
+			          <a class="dropdown-item" href="#" target="_blank">Class-IX</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#" target="_blank">Publish E-book/notes</a>
+
+			        </div>
+			    </li>
 				<li class="nav-item ">
-					<a href="#" class="nav-link">Blogs</a>
-				</li>
-				<li class="nav-item ">
-					<a href="#" class="nav-link">Study Material</a>
-				</li>
-				<li class="nav-item ">
-					<a href="#" class="nav-link">Collabrate</a>
+					<a href="#" class="nav-link">Collaborate</a>
 				</li>
 			</ul>
 		</div>
@@ -94,6 +118,7 @@
 			    <span class="sr-only">Next</span>
 			  </a>
 		</div>
+
 	<div class="col-md-1"></div>
 </div>
 <!--- Jumbotron -->
@@ -176,14 +201,6 @@
 	</div>
 </div>
 
-
-<!--HIDDEN SECTION-->
-<button class="fun" data-toggle="collapse" data-taget="hidden">Hidden Box</button>
-<div id="hidden" class="collpase">
-	<div class="container-fluid">
-		<div class="row text-center"></div>
-	</div>
-</div>
 
 <hr>
 <!--- Connect -->
