@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<title>cbse</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0n.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+		<!--Style Sheet-->
+		<link rel="stylesheet" type="text/css" href="E:\web development\Website Development\bootstrap-4.5.0-dist\style_first.css">
+		<!--Font Awesome -->
+
+		<script type="text/javascript" src=" ./js/all.js">	</script>
+	<link href="style.css" rel="stylesheet">
+	<style type="text/css">
+		$('.dropdown-toggle').dropdown()
+		a hover:{
+			color:red;
+		}
+		a link:{
+			color:purple;
+		}
+		a visited:{
+			color:grey;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: "poppins" , sans-serif;
+}
+.img-responsive{
+  width:200px;
+}
+
+.navbar{
+  background-color: white;
+ 
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1rem!important;
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+.carousel-caption{
+
+  position: absolute;
+  top:30%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1{
+  font-family: sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #000;
+  padding-bottom:1rem;
+}
+.height-80{
+  min-height: 10vh;
+}
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button hover{
+  color:red;
+}
+.jumbotron{
+  background-color: grey;
+  border-radius:0rem;
+}
+.a hover{
+  color: green;
+}
+.fun{
+
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+}
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+ 
+	</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="C:\Users\HP\Documents\hackdexam-logo.jpg" ><img src="C:\Users\HP\Documents\hackdexam-logo.png" class="img-fluid img-responsive p-0"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			
+				<li class="nav-item ">
+					<a href="index.html" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item ">
+					<a href="audio-book.html" class="nav-link">Audio books</a>
+				</li>
+				<li class="nav-item ">
+					<a href="#" class="nav-link">Coding</a>
+				</li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Competitive Exams
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								        	
+
+
+			        	
+					  <a class="dropdown-item" href="#" target="_blank">Engineering</a>
+			          <a class="dropdown-item" href="#" target="_blank">Medical</a>
+			          <a class="dropdown-item" href="#" target="_blank">Defence</a>
+			          <a class="dropdown-item" href="#" target="_blank">Law</a>
+			           
+			           
+			        </div>
+			    </li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          E-books
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#" target="_blank">CBSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">ISC/ICSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">UP/STATE</a>
+			          <a class="dropdown-item" href="#" target="_blank">LIBRARY</a>
+			          
+			        </div>
+			    </li>
+				<li class="nav-item ">
+					<a href="#" class="nav-link">Collaborate</a>
+				</li>
+			</ul>
+		</div>
+</nav>
+<!--TITLE -->
+<div class="container-fluid">
+	<div class="row text-center ">
+		<div class="col">
+			<h1 class="display-3 text-light heading bg-dark" >CBSE</h1>
+		</div>
+	</div>
+</div>
+
+
+<!--MAIN CONTENT -->
+<div class="container-fluid mt-5">
+	<div class="row pt-1">
+		<div class="col-md-1 d-none d-md-block"></div>
+		<div class="col-md-7" style="border:2px solid red;">
+			<div class="row">
+				<div class="col-9">
+					<h1 class="diplay-2">CLASS-XII</h1>
+				</div>
+				<div class="col-3 m-auto">
+					<a href="class-11.html " class="btn btn-secondary ">Click Here</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 d-none d-md-block"></div>
+	</div>
+	<div class="row py-2">
+		<div class="col-md-1 d-none d-md-block"></div>
+		<div class="col-md-7" style="border:2px solid red;">
+			<div class="row">
+				<div class="col-9">
+					<h1 class="diplay-2">CLASS-XI </h1>
+				</div>
+				<div class="col-3 m-auto">
+					<a href="class-10.html " class="btn btn-secondary ">Click Here</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 d-none d-md-block"></div>
+	</div>
+	<div class="row py-2">
+		<div class="col-md-1 d-none d-md-block"></div>
+		<div class="col-md-7" style="border:2px solid red;">
+			<div class="row">
+				<div class="col-9">
+					<h1 class="diplay-2">CLASS-X </h1>
+				</div>
+				<div class="col-3 m-auto">
+					<a href="class-9.html " class="btn btn-secondary ">Click Here</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 d-none d-md-block"></div>
+	</div>
+	<div class="row py-2">
+		<div class="col-md-1 d-none d-md-block"></div>
+		<div class="col-md-7" style="border:2px solid red;">
+			<div class="row">
+				<div class="col-9">
+					<h1 class="diplay-2">CLASS-IX </h1>
+				</div>
+				<div class="col-3 m-auto">
+					<a href="class-12.html " class="btn btn-secondary ">Click Here</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 d-none d-md-block"></div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<!--- Connect -->
+<div class="container-fluid">
+	<div class="row text-center p-4">
+		<div class="col-12">
+			<h2 class="text-muted display-4" style="font-family:serif;">CONNECT</h2>
+		</div>
+		<div class="col social ">
+			<a href="#" class="fab fa-instagram fa-3x text-danger m-4"></a>
+			<a href="#" class="fab fa-facebook fa-3x text-primary m-4"></a>
+
+			<a href="#" class="fab fa-youtube fa-3x text-danger m-4"></a>
+			<a href="#" class="fab fa-twitter fa-3x text-primary m-4"></a>
+
+		</div>
+	</div>
+</div>
+
+<!--- Footer --> 
+<footer class="bg-dark text-light pt-4"> 
+	<div class="container-fluid p-2">
+		<div class="row text-center p-2">
+			<div class="col-12">
+				<img src="C:\Users\HP\Documents\hackdexam-logo.png" style="width:15vw;" class="mb-4">
+				<br>
+				
+			
+				<a href="#" class="m-4 ">About Us</a>
+				<a href="#" class="m-4">Privacy Policy</a>
+				<a href="#" class="m-4">Disclaimer</a>
+				<a href="#" class="m-4">Blogs</a>
+				
+			</div>
+							
+		</div>
+</footer>
+
+<!--Jquery Refrence -->
+		<script type="text/javascript">// Prevent closing from click inside dropdown
+$(document).on('click', '.dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+
+// make it as accordion for smaller screens
+if ($(window).width() < 992) {
+  $('.dropdown-menu a').click(function(e){
+    e.preventDefault();
+      if($(this).next('.submenu').length){
+        $(this).next('.submenu').toggle();
+      }
+      $('.dropdown').on('hide.bs.dropdown', function () {
+     $(this).find('.submenu').hide();
+  })
+  });
+}</script>
+		<script type="text/javascript" src="js/jquery-3.5.1.js "></script>
+		<!--Bootstrap Refrence -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
