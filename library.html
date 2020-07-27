@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<title>Library</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0n.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+		<!--Style Sheet-->
+		<link rel="stylesheet" type="text/css" href="E:\web development\Website Development\bootstrap-4.5.0-dist\style_first.css">
+		<!--Font Awesome -->
+
+		<script type="text/javascript" src=" ./js/all.js">	</script>
+	<link href="style.css" rel="stylesheet">
+	
+	<style type="text/css">
+		$('.dropdown-toggle').dropdown()
+		a hover:{
+			color:red;
+		}
+		a link:{
+			color:purple;
+		}
+		a visited:{
+			color:grey;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: "poppins" , sans-serif;
+}
+.img-responsive{
+  width:150px;
+}
+
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+@media (min-width: 992px){
+	.dropdown-menu .dropdown-toggle:after{
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	}
+	.dropdown-menu .dropdown-menu{
+		margin-left:0; margin-right: 0;
+	}
+	.dropdown-menu li{
+		position: relative;
+	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}
+
+.fun{
+	width: 100%;
+	margin-bottom: .5rem;
+}
+.img-r{
+	widht:5vw;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+ 
+	</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="C:\Users\HP\Documents\hackdexam-logo.jpg" ><img src="C:\Users\HP\Documents\hackdexam-logo.png" class="img-fluid p-0 img-responsive"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			
+				<li class="nav-item ">
+					<a href="index.html" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item ">
+					<a href="audio-book.html" class="nav-link">Audio books</a>
+				</li>
+				<li class="nav-item ">
+					<a href="#" class="nav-link">Coding</a>
+				</li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Competitive Exams
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								        	
+
+
+			        	
+					  <a class="dropdown-item" href="#" target="_blank">Engineering</a>
+			          <a class="dropdown-item" href="#" target="_blank">Medical</a>
+			          <a class="dropdown-item" href="#" target="_blank">Defence</a>
+			          <a class="dropdown-item" href="#" target="_blank">Law</a>
+			           
+			           
+			        </div>
+			    </li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          E-books
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#" target="_blank">CBSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">ISC/ICSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">UP/STATE</a>
+			          <a class="dropdown-item" href="#" target="_blank">LIBRARY</a>
+			          
+			        </div>
+			    </li>
+				<li class="nav-item ">
+					<a href="#" class="nav-link">Collaborate</a>
+				</li>
+			</ul>
+		</div>
+</nav>
+	<!--HEADING -->
+<div class="container-fluid">
+	<div class="row text-center bg-dark">
+		<div class="col">
+			<h1 class="display-4 text-light heading" style="font-family: serif;">E-LIBRARY</h1>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid">
+ 	<div class="row">
+	 	<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+			    CBSE Class-XII COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+		<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+			    CBSE Class-XI  COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample1">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+	</div>
+</div>
+
+<div class="container-fluid">
+ 	<div class="row">
+	 	<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+			    CBSE Class-X COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample2">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+		<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+			    CBSE Class-IX   COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample3">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+	</div>
+</div>
+
+<div class="container-fluid">
+ 	<div class="row">
+	 	<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+			    ICSE\ISC Class-XII COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample4">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+		<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+			    ICSE\ISC Class-XI  COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample5">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+	</div>
+</div>
+
+<div class="container-fluid">
+ 	<div class="row">
+	 	<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+			    ICSE\ISC Class-X COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample7">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+		<div class="col-md-6">
+			  <button class="fun" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
+			   ICSE\ISC Class-IX COURSE BOOK<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+			<div class="collapse" id="collapseExample8">
+			  <div class="container-fluid">
+			  	<div class="row">
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class="col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<div class=" col-sm-6 col-md-4 col-lg-3">
+			  			<div class="card">
+			  				<img class="card-img-top" src="#">
+			  				<div class="card-body">
+			  					<h5 class="card-title">NCERT</h5>
+			  					<p class="card-text">CLASS-12 PHYSICS</p>
+			  					<a class="btn" href="#">Download</a>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		
+			  	</div>
+			  </div>
+			</div>
+		</div> 
+	</div>
+</div>
+
+
+
+
+<hr>
+<!--- Connect -->
+<div class="container-fluid">
+	<div class="row text-center p-4">
+		<div class="col-12">
+			<h2 class="text-muted display-4" style="font-family:serif;">CONNECT</h2>
+		</div>
+		<div class="col social ">
+			<a href="#" class="fab fa-instagram fa-3x text-danger m-4"></a>
+			<a href="#" class="fab fa-facebook fa-3x text-primary m-4"></a>
+
+			<a href="#" class="fab fa-youtube fa-3x text-danger m-4"></a>
+			<a href="#" class="fab fa-twitter fa-3x text-primary m-4"></a>
+
+		</div>
+	</div>
+</div>
+
+<!--- Footer --> 
+<footer class="bg-dark text-light pt-4"> 
+	<div class="container-fluid p-2">
+		<div class="row text-center p-2">
+			<div class="col-12">
+				<img src="C:\Users\HP\Documents\hackdexam-logo.png"class="mb-4 img-responsive img-fluid">
+				<br>
+				
+			
+				<a href="#" class="m-4 ">About Us</a>
+				<a href="#" class="m-4">Privacy Policy</a>
+				<a href="#" class="m-4">Disclaimer</a>
+				<a href="#" class="m-4">Blogs</a>
+				
+			</div>
+							
+		</div>
+</footer>
+
+<!--Jquery Refrence -->
+
+		<script type="text/javascript" src="js/jquery-3.5.1.js "></script>
+		<!--Bootstrap Refrence -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+
+
