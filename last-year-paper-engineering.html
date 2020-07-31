@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	 <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<title>Library</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0n.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+		<!--Style Sheet-->
+		<link rel="stylesheet" type="text/css" href="E:\web development\Website Development\bootstrap-4.5.0-dist\style_first.css">
+		<!--Font Awesome -->
+
+		<script type="text/javascript" src=" ./js/all.js">	</script>
+	<link href="style.css" rel="stylesheet">
+	
+	<style type="text/css">
+		$('.dropdown-toggle').dropdown()
+		a hover:{
+			color:red;
+		}
+		a link:{
+			color:purple;
+		}
+		a visited:{
+			color:grey;
+		}
+		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: "poppins" , sans-serif;
+}
+.img-responsive{
+  width:150px;
+}
+img.card-img-top{
+	width:120px;
+	height:150px;
+}
+
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+@media (min-width: 992px){
+	.dropdown-menu .dropdown-toggle:after{
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	}
+	.dropdown-menu .dropdown-menu{
+		margin-left:0; margin-right: 0;
+	}
+	.dropdown-menu li{
+		position: relative;
+	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}
+
+.fun{
+	width: 100%;
+	margin-bottom: .5rem;
+}
+.img-r{
+	widht:5vw;
+}
+.card{
+	max-width:120px;
+	max-height: 180px;
+}
+.col-xs-4{
+	width:152px;
+	height: 180px;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+ .border{
+ 	border: 1px solid red;
+ }
+	</style>
+
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="C:\Users\HP\Documents\hackdexam-logo.jpg" ><img src="hackdexam-logo.PNG" class="img-fluid p-0 img-responsive"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			
+				<li class="nav-item ">
+					<a href="index.html" class="nav-link active">Home</a>
+				</li>
+				<li class="nav-item ">
+					<a href="audio-book.html" class="nav-link">Audio books</a>
+				</li>
+				<li class="nav-item ">
+					<a href="#" class="nav-link">Coding</a>
+				</li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          Competitive Exams
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								        	
+
+
+			        	
+					  <a class="dropdown-item" href="#" target="_blank">Engineering</a>
+			          <a class="dropdown-item" href="#" target="_blank">Medical</a>
+			          <a class="dropdown-item" href="#" target="_blank">Defence</a>
+			          <a class="dropdown-item" href="#" target="_blank">Law</a>
+			           
+			           
+			        </div>
+			    </li>
+				<li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          E-books
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#" target="_blank">CBSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">ISC/ICSE</a>
+			          <a class="dropdown-item" href="#" target="_blank">UP/STATE</a>
+			          <a class="dropdown-item" href="#" target="_blank">LIBRARY</a>
+			          
+			        </div>
+			    </li>
+				<li class="nav-item ">
+					<a href="#" class="nav-link">Collaborate</a>
+				</li>
+			</ul>
+		</div>
+</nav>
+	<!--HEADING -->
+<div class="container-fluid">
+	<div class="row text-center bg-dark">
+		<div class="col">
+			<h1 class="display-5 text-light heading" style="font-family: serif;">ENGINEERING</h1>
+		</div>
+	</div>
+</div>
+<section id="hidden-box">
+	<div class="container-fluid p-5">
+		<div class="row">
+			<div class="col-md-6">
+				 <button class="fun" data-toggle="collapse" href="#jee-mains" role="button" aria-expanded="false" aria-controls="collapseExample">
+			    JEE-MAINS<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+				<div class="collapse" id="jee-mains">
+				  <div class="container border">
+				  	<div class="row">
+				  		<div class="col-md-6">
+
+				  			<p class="lead">8 January 2019 shift 1
+				  				<a href="paper/8-19-1.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">8 January 2019 shift 2
+				  				<a href="paper/8-19-2.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	 
+				  		<div class="col-md-6">
+				  			<p class="lead">9 January 2019 shift 1
+				  				<a href="paper/9-19-1.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		 
+				  		<div class="col-md-6">
+				  			<p class="lead">9 January 2019 shift 2
+				  				<a href="paper/9-19-2.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+
+				  		<div class="col-md-6">
+				  			<p class="lead">10 January 2019 shift 1
+				  				<a href="paper/10-19-1.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">10 January 2019 shift 2
+				  				<a href="paper/10-19-2.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				 <button class="fun" data-toggle="collapse" href="#jee-advance" role="button" aria-expanded="false" aria-controls="collapseExample">
+			    JEE ADVANCE<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+				<div class="collapse" id="jee-advance">
+				  <div class="container border">
+				  	<div class="row">
+				  		<div class="col-md-6">
+
+				  			<p class="lead">JEE ADVANCE(2019)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">JEE ADVANCE(2018)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	 
+				  		<div class="col-md-6">
+				  			<p class="lead">JEE ADVANCE(2017)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		 
+				  		<div class="col-md-6">
+				  			<p class="lead">JEE ADVANCE(2016)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+
+				  		<div class="col-md-6">
+				  			<p class="lead">JEE ADVANCE(2015)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">JEE ADVANCE(2014)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				 <button class="fun" data-toggle="collapse" href="#upsee" role="button" aria-expanded="false" aria-controls="collapseExample">
+			    UPSEE<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+				<div class="collapse" id="upsee">
+				  <div class="container border">
+				  	<div class="row">
+				  		<div class="col-md-6">
+
+				  			<p class="lead">UPSEE(2019)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">UPSEE(2018)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	 
+				  		<div class="col-md-6">
+				  			<p class="lead">UPSEE(2017)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		 
+				  		<div class="col-md-6">
+				  			<p class="lead">UPSEE(2016)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+
+				  		<div class="col-md-6">
+				  			<p class="lead">UPSEE(2015)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">UPSEE(2014)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				 <button class="fun" data-toggle="collapse" href="#bitsat" role="button" aria-expanded="false" aria-controls="collapseExample">
+			    BITSAT<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+				<div class="collapse" id="bitsat">
+				  <div class="container border">
+				  	<div class="row">
+				  		<div class="col-md-6">
+
+				  			<p class="lead">BITSAT(2019)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">BITSAT(2018)
+				  				<a href="paper/BITSAT-Solved-Paper-2018.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	 
+				  		<div class="col-md-6">
+				  			<p class="lead">BITSAT(2017)
+				  				<a href="paper/BITSAT-Solved-Paper-2017.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		 
+				  		<div class="col-md-6">
+				  			<p class="lead">BITSAT(2016)
+				  				<a href="paper/BITSAT-Paper-2016.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+
+				  		<div class="col-md-6">
+				  			<p class="lead">BITSAT(2015)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		<div class="col-md-6">
+				  			<p class="lead">BITSAT(2014)
+				  				<a href="#"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				 <button class="fun" data-toggle="collapse" href="#amu" role="button" aria-expanded="false" aria-controls="collapseExample">
+			    Aligarh Muslim University<i class="fas fa-arrow-down mx-5"></i>
+			  </button>
+			  
+
+				<div class="collapse" id="amu">
+				  <div class="container border">
+				  	<div class="row">
+				  		
+				  		<div class="col-md-6">
+				  			<p class="lead">Aligarh Muslim University(2018)
+				  				<a href="paper/AMUEEE 2018 Paper.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  	 
+				  		<div class="col-md-6">
+				  			<p class="lead">Aligarh Muslim University(2017)
+				  				<a href="paper/AMUEEE 2017 Paper.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+				  		 
+				  		<div class="col-md-6">
+				  			<p class="lead">Aligarh Muslim University(2016)
+				  				<a href="paper/AMUEEE 2016 Paper.pdf"><i class="fas fa-download ml-4"></i></a></p>
+				  		</div>
+
+				  		
+				  		</div>
+				  	</div>
+				  </div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+</section>
+ 
+
+
+
+<hr>
+<!--- Connect -->
+<div class="container-fluid">
+	<div class="row text-center p-4">
+		<div class="col-12">
+			<h2 class="text-muted display-4" style="font-family:serif;">CONNECT</h2>
+		</div>
+		<div class="col social ">
+			<a href="#" class="fab fa-instagram fa-3x text-danger m-4"></a>
+			<a href="#" class="fab fa-facebook fa-3x text-primary m-4"></a>
+
+			<a href="#" class="fab fa-youtube fa-3x text-danger m-4"></a>
+			<a href="#" class="fab fa-twitter fa-3x text-primary m-4"></a>
+
+		</div>
+	</div>
+</div>
+
+<!--- Footer --> 
+<footer class="bg-dark text-light pt-4"> 
+	<div class="container-fluid p-2">
+		<div class="row text-center p-2">
+			<div class="col-12">
+				<img src="hackdexam-logo.PNG"class="mb-4 img-responsive img-fluid">
+				<br>
+				
+			
+				<a href="#" class="m-4 ">About Us</a>
+				<a href="#" class="m-4">Privacy Policy</a>
+				<a href="#" class="m-4">Disclaimer</a>
+				<a href="#" class="m-4">Blogs</a>
+				
+			</div>
+							
+		</div>
+</footer>
+
+<!--Jquery Refrence -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="js/jquery-3.5.1.js "></script>
+		<!--Bootstrap Refrence -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+
